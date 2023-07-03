@@ -16,7 +16,7 @@ public class ItemController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (transform.position.z < player.transform.position.z)
+        if (transform.position.z + 15f < player.transform.position.z)
         {
             Debug.Log("complete!");
             Destroy(gameObject);
